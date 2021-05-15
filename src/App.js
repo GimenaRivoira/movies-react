@@ -6,6 +6,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import authProvider from './Components/authController/authProvider';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 /* Importacion de pages */
 import Home from './pages/Home';
@@ -26,7 +27,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-
+    <ScrollToTop />
+    
     <Header token={token} setToken={setToken}/>
      <div className="container main-container">
       <Switch>
